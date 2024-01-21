@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ca9627c1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <i class="fa-solid fa-computer" class="logo"></i>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header_text">
+            <p>Software Engineering Student</p>
+            <h1>Hello, I'm <span>Alaa Eddin </span><br> Addas from Canada</h1>
+        </div>
+    </div>
+</div>
+    <!--------about------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_col1">
+                <img src="images/image.JPG" >
+            </div>
+            <div class="about_col2">
+                <h1 class="subtitle">About Me</h1>
+                <p>👋 Hello, I'm Alaa Eddin Addas, a 20-year-old software engineering student at Polytechnique Montreal. Currently immersing myself in the dynamic world of technology, I thrive on challenges and am fueled by a passion for innovation.
+                    <br><br>🎓 Pursuing my software engineering degree has not only sharpened my technical skills but has also instilled in me a deep appreciation for problem-solving and creativity.
+                     <br><br>💡 In my free time, you'll find me delving into literature on personal development, a testament to my belief in constant self-improvement. As a certified gym enthusiast and personal coach, I channel my energy into both the physical and mental aspects of well-being.
+                     <br><br>💻 Coding is not just my academic pursuit but also a personal playground where I turn ideas into reality. Proficient in languages like Python, C++, HTML, and more, I see coding as a form of art—a way to bring innovation to life.
+                     <br><br>☕ Fueling these endeavors is my love for coffee. Whether it's debugging code or pushing my limits at the gym, a good cup of coffee is my constant companion.
+                    <br><br>🚀 Always open to new challenges and collaborations, I'm eager to contribute my skills and enthusiasm to the ever-evolving field of software engineering.
+                    <br><br>📚 Let's connect and explore the exciting intersections of technology, personal development, and fitness. Whether you're seeking a passionate coder, a fitness advocate, or just a fellow coffee enthusiast, I'm ready for the next adventure.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Coding Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Professional Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>
+                        <ol>
+                            <li>Procedural and Object Oriented Programming</li>
+                            <li>Data Analysis with python scientific libraries(Pandas, Matplotlib,Seaborn and Plotly)</li>
+                        </ol>
+                        </li>
+                        <li><span>Other programming languages</span><br>
+                           <ol>
+                               <li>C/C++</li>
+                               <li> Solid Basics in HTML, CSS & Javascript</li>
+                               <li>Some Notions in SQL</li>
+                               <li>VHDL</li>
+
+                           </ol>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-present</span><br>Personal Fitness Coach</li>
+                        <li><span>2023-present</span><br>Tutoring Primary and secondary school students in multiple school subjects</li>
+                        <li><span>2022-2023</span><br>Summer Camp Coordinator</li>
+                        <li><span>2021-2022</span><br>Summer Camp Counselor</li>
+                        <li><span>2020-2021</span><br>Cashier at Tim Hortons</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-present</span><br>Bachelor in Engineering </li>
+                        <li><span>2021-2023</span><br>DEC in Natural Sciences</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--------Services------
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Experience </h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                 <a href="#">Learn more</a>
+            </div>
+             <div>
+                 <i class="fa-solid fa-house"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                 <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+
+    </div>
+</div> > -->
+<!--------------------Prtfoloio --------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work </h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/littlepro.jpg">
+                <div class="layer">
+                    <h3>Little Professor</h3>
+                    <p>An educational game, developed using the Pygame Python Library. This game stimulates
+                    the kids positively and make them practice their mathematical arithmetic operations.</p>
+                    <a href="https://github.com/Aladin-bit01/CS50p-Final-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                 <img src="images/tax.jpg">
+                 <div class="layer">
+                    <h3>Quebec Tax Calculator</h3>
+                    <p>Using the CustomTkinter python library, this simple GUI was implemented. This calculator takes
+                    in consideration the different Quebec Tax Brackets.</p>
+                    <a href="https://github.com/Aladin-bit01/Tax-Calculator"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                 <img src="images/chessgame.jpg.crdownload">
+                 <div class="layer">
+                    <h3>Chess Game</h3>
+                    <p>Using the object oriented programming principles as well as the pygame library, this chess game
+                    was developed. In fact, multiple classes were used to create all the chess pieces and to implement
+                    the logic behind the movement of each piece. The pygame library is used to implement the graphical user interface</p>
+                    <a href="https://github.com/INF1007-2023A/tp4-groupel06-15"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-------------contact ------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> alaaeddinaddas11@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 5147094611</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Aladin-bit01"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/alaaeddinaddas2003"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Alaa%20Eddin%20Addas%20CV%202024%20(Q1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="text" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6", placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Alaa Eddin Addas.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents= document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link') }
+
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab') }
+
+         event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+    }
+</script>
+<script>
+    sidemenu= document.getElementById('sidemenu')
+    function openmenu(){
+       sidemenu.style.right ='0'
+    }
+
+    function closemenu(){
+        sidemenu.style.right = '-200'
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyAYftSKi60NMm0B8dscATPz2RDwzS_cfr791DfWefzAy5vsqn8KJ-j8KMBQi2njfcm/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML= 'Message sent successfully'
+        setTimeout(function () {msg.innerHTML= '' }, 5000)
+        form.reset()})
+      .catch(error => console.error('Error!', error.message))
+              })
+</script>
+
+</body>
+</html>
